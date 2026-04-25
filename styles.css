@@ -97,3 +97,401 @@ a {
   padding: 0.75rem 1rem;
   font: inherit;
 }
+
+.hero,
+.section {
+  padding: 4.5rem 0;
+}
+
+.hero {
+  min-height: calc(100vh - 5.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.8fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.section-label {
+  margin: 0 0 0.9rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero h1,
+.section-heading h2,
+.work-card h3,
+.thinking-card h3 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 4.75rem);
+  line-height: 0.95;
+  max-width: 8ch;
+}
+
+.hero-role {
+  margin: 1.1rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2f3c52;
+}
+
+.hero-text,
+.about-panel p,
+.work-card p,
+.thinking-card p,
+.contact-card p,
+.contact-links a {
+  line-height: 1.7;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hero-text {
+  max-width: 58ch;
+  margin: 1.2rem 0 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background: #174ed6;
+  outline: none;
+}
+
+.button-secondary,
+.button-tertiary {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible,
+.button-tertiary:hover,
+.button-tertiary:focus-visible {
+  border-color: #bfd0f2;
+  color: var(--accent);
+  outline: none;
+}
+
+.hero-summary,
+.about-panel,
+.work-card,
+.thinking-card,
+.contact-card {
+  background: var(--surface);
+  border: 1px solid rgba(216, 224, 235, 0.9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.summary-card,
+.about-panel,
+.work-card,
+.thinking-card,
+.contact-card {
+  padding: 1.75rem;
+}
+
+.summary-label,
+.card-label {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.summary-list {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.summary-item {
+  display: grid;
+  gap: 0.25rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.summary-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.summary-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.summary-caption {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.section-heading {
+  max-width: 44rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.about-panel {
+  max-width: 56rem;
+}
+
+.work-grid,
+.thinking-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.work-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.thinking-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.work-card,
+.thinking-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.work-card h3,
+.thinking-card h3 {
+  margin-top: 0.85rem;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.work-card p,
+.thinking-card p,
+.contact-card p {
+  margin: 0.9rem 0 0;
+}
+
+.impact-text {
+  font-weight: 600;
+  color: #33415c;
+}
+
+.work-card .button {
+  margin-top: 1.35rem;
+}
+
+.contact-section {
+  padding-bottom: 5rem;
+}
+
+.contact-card {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 46rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-soft);
+}
+
+.case-page {
+  padding-bottom: 4rem;
+}
+
+.case-hero {
+  padding: 4rem 0 2rem;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.3rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.case-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.8fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.case-section,
+.case-sidebar {
+  background: var(--surface);
+  border: 1px solid rgba(216, 224, 235, 0.9);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.case-section,
+.case-sidebar {
+  padding: 1.75rem;
+}
+
+.case-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.case-block h2,
+.case-sidebar h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.25rem;
+}
+
+.case-block p,
+.case-block li,
+.case-sidebar p,
+.case-sidebar li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.case-block ul,
+.case-sidebar ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.case-block li + li,
+.case-sidebar li + li {
+  margin-top: 0.55rem;
+}
+
+.case-sidebar {
+  position: sticky;
+  top: 6rem;
+}
+
+@media (max-width: 920px) {
+  .hero,
+  .work-grid,
+  .thinking-grid,
+  .case-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 3rem;
+  }
+
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 20px;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .case-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-frame {
+    width: min(var(--max-width), calc(100% - 1rem));
+  }
+
+  .hero,
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .summary-card,
+  .about-panel,
+  .work-card,
+  .thinking-card,
+  .contact-card {
+    padding: 1.3rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 14vw, 3.6rem);
+  }
+
+  .hero-role {
+    font-size: 1rem;
+  }
+}
